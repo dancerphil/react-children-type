@@ -14,11 +14,11 @@ if (children.type.name === 'Target') {...} // using function.name
 if (children.type.displayName === 'Target') {...} // which is a static variable on Target
 ```
 
-They all seems to be right, but actually no. And `if (children.type === Target) {...}` is recommended.
+They all seems to be right, but actually no. And the first is recommended.
 
-see also https://github.com/gaearon/react-hot-loader/blob/master/src/utils.dev.js
+> `if (children.type === Target) {...}`
 
-and https://github.com/gaearon/react-hot-loader/blob/master/src/utils.prod.js
+see also [react-hot-loader](https://github.com/gaearon/react-hot-loader) in [dev](https://github.com/gaearon/react-hot-loader/blob/master/src/utils.dev.js) and [prod](https://github.com/gaearon/react-hot-loader/blob/master/src/utils.prod.js)
 
 ## How to run
 
